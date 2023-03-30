@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+     <title>Barriers</title>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <style>
+    :root
+    {
+      --first: #d0d;
+      --second: #66eeff;
+    }
+    body
+    {
+      font-family: sans-serif;
+      padding: 0;
+      margin: 0;
+
+    }
+    .full
+    {
+      height: 100vh;
+    }
+    .bg-color
+    {
+      background: rgb(2,0,36);
+      background: linear-gradient(160deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 33%, rgba(78,25,117,1) 67%);
+      color: #ffffff;
+    }
+    header
+    {
+      color: #000000;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    ul
+    {
+      text-align: center;
+      list-style: none;
+    }
+    a
+    {
+      line-height: 1.5;
+      text-decoration: none;
+      font-size: 50px;
+
+    }
+    main
+    {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    footer
+    {
+      padding: 30px;
+      font-size: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    table
+    {
+      border: 2px solid #333;
+      border-collapse: collapse;
+      background-color: #fff;
+    }
+    tr
+    {
+      padding: 0;
+      margin: 0;
+    }
+    td
+    {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      height: 50px;
+      width: 50px;
+      border: 1px solid #959595;
+      z-index: 99;
+    }
+    #settings
+    {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .marked-1
+    {
+      background-color: var(--first);
+    }
+    .marked-2
+    {
+      background-color: var(--second);
+    }
+    .title
+    {
+      z-index: 10;
+      position: absolute;
+      left: 50%;
+      top: 40%;
+      transform: translateX(-50%) translateY(-50%);
+      font-family: "Montserrat";
+      text-align: center;
+      width: 60%;
+    }
+
+  </style>
+</head>
+<body>
+<header>
+  <div class="more-pens">
+  </div>
+  <div class="background"></div>
+  <div class="title">
+    <ul>
+      <li><a href="#game">ИГРА</a></li>
+      <li><a href="#settings">НАСТРОЙКИ</a></li>
+      <li><a href="#rules">ПРАВИЛА</a></li>
+    </ul>
+  </div>
+</header>
+<div class="full"></div>
+<main id="game" class="full bg-color">
+  <h2> Начнитие играть уже сейчас</h2>
+  <table>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="marked-2"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="marked-2"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td class="marked-1"></td>
+      <td class="marked-1"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+</main>
+<div id="settings" class="full">
+
+  <form method="get" id="signupForm">
+    <p style="font-size: 30px;">Введите ваше имя</p>
+    <input type="text" name="name" style="height: 40px; width:400px;" >
+    <p style="font-size: 30px;">Выберете цвет</p>
+    <input type="color" name="color" style="height:40px; width:400px; margin-bottom: 15px;" >
+    <br>
+    <input type="submit" name="submit" id="submit"  style="height:50px; width:400px; background-color: #551a8b; color: #fff; font-size: 25px;" value="сохранить настройки и играть">
+  </form>
+</div>
+<footer id="rules" class="full bg-color">
+
+  <p><h3 >ПРАВИЛА</h3>!!!Ход необходимо завершить за 3 секунды!!!<br>Простая тактическая игра, суть которой в позиционной борьбе за пространство. На поле 8х8 (т.е. размера шахматной доски), игроки один за другим чертят небольшие линии, которые перекрывают 2 любых клетки подряд: т.е. например игрок 1 проводит вертикальную линию, занимающую e2 и e3.
+  Игрок 2 делает то же самое, но его линия не может пересекать уже существующие загрождения. По мере заполнения поля, остается все меньше свободного пространства, и в конце необходим трезвый расчет, чтобы закончить игру. Игрок, который не может больше поставить свою черту, т.к. все уже загорожено, проигрывает.</p>
+</footer>
+</body>
+
